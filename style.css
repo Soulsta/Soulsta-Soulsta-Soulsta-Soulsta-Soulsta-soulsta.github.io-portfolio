@@ -1,0 +1,210 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   
+}
+/*the images classes */
+.the_ultra_flexa{
+  display: grid;
+  grid-template-columns: 300px 300px 300px ;
+  justify-content: space-evenly;
+gap: 25px;
+}
+
+.flexa {
+  
+
+  
+}
+.imgss{
+padding-right: auto;
+padding-bottom:auto ;
+}
+
+/*the color for the card button*/
+
+ 
+.btn-primary{
+  color: #fff;
+  background-color:#7717e8;
+  border-color: #7717e8;
+
+}
+ 
+/*the nav classes */
+nav { 
+display: flex;
+justify-content: space-around;
+align-items: center;
+min-height: 7vh;
+background-color:#7717e8;
+font-family: 'Beau Rivage', cursive;
+padding: 10px;
+}
+.text-muted{
+color:white;
+
+}
+.nav-item{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color: black;
+
+}
+.logo{
+color:white;
+text-transform: uppercase;
+letter-spacing: 5px;
+font-size: 20px;
+float: right;
+margin-top: 14px;
+font-family: 'Beau Rivage', cursive;
+}
+
+.nav-links{
+display: flex;
+width:45% ;
+background-color:none; /*use colors for here to see gap of the widths and how much need to be added -angel*/
+justify-content: space-around;
+color: black;
+margin-top: 25px;
+}
+
+.nav-links a{
+color: white;
+text-decoration: none;
+letter-spacing: 2px;
+font-weight: bold;
+font-size: 20px;
+
+}
+.nav-links li{
+list-style: none;
+
+}
+.burger{
+
+cursor: pointer;
+}
+/*text for images */
+.header{
+  font-family:none;
+  font-size: 20px;
+  top: 40%;
+  left: 53%;
+ margin-bottom: 100px;
+position: absolute;
+color: white;
+
+}
+
+
+.text{
+  font-family: 'Beau Rivage', cursive;
+  font-size: 28px;
+  position: absolute;
+  top: 54%;
+  left: 61%;
+  transform: translate(-50%, -50%);
+ color: whitesmoke;
+
+}
+
+.butt{
+  position: absolute;
+  top: 60%;
+  left: 55%;
+
+}
+
+/*footer*/
+
+footer{
+  background-color: #7717e8;
+ padding: 20px;
+ 
+}
+
+
+
+
+/*mess around with width and height because of the shape when adding all the nav bars */
+.burger div{
+width: 15px;
+height: 4px;
+background-color:white;
+margin: 5px;
+transition: all 0.3 ease;
+
+}
+
+
+
+
+/*the animation*/        
+/* tablet screens*/
+@media screen and (max-width: 1024px){
+    .nav-links{
+      width: 50%;
+
+    }
+}
+
+
+
+/*mobile screens */
+@media screen and(max-width: 768px) {
+   body{
+       overflow-x: hidden ;
+   }
+  
+  .nav-links{
+   position: absolute;
+      right: 0px;
+      height: 92vh;
+      top: 8vh;
+      background-color:white;
+      display: flex;
+      flex-direction:column ;
+      align-items: center;
+      width: 45%;
+          transform: translateX(100%);
+          transition: transfrom 0.5s ease-in;
+  }
+  .nav-links li{
+          opacity: 0;
+
+  }
+  .burger{
+      display: block;
+  }
+
+  .nav-active{
+      transform: translateY(0%);
+
+  }
+}
+
+   @keyframes navLinkFade{
+      from{
+          opacity: 0;
+              transform: translateX(50px);
+      }
+      to{
+              opacity: 1;
+              transform:  translateX(opx);
+      }
+
+
+   }       
+
+
+   .toggle .line1 {
+    transform: rotate(-45deg translate(-5px,6px));   
+   }
+   .toggle .line2 {
+      opacity: 0;    
+   }
+   .toggle .line3 {
+      transform: rotate(-45deg translate(-5px,-6px));   
+   }
